@@ -23,6 +23,11 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< Updated upstream
+=======
+            android:name=".dashboardActivity"></activity>
+        <activity
+>>>>>>> Stashed changes
             android:name=".AdminDashboardActivity"></activity>
         <activity
             android:name=".ContentModificationActivity"></activity>
