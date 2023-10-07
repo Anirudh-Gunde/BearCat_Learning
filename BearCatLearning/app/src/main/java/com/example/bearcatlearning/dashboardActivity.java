@@ -1,6 +1,8 @@
 package com.example.bearcatlearning;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -23,5 +25,13 @@ public class dashboardActivity extends AppCompatActivity {
         androidIB=findViewById(R.id.androidIB);
         patternsIB=findViewById(R.id.patternsIB);
         gdpIB=findViewById(R.id.gdpIB);
+        javaIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When Java button is clicked, start MaterialAndVideosJavaActivity
+                Intent intent = new Intent(dashboardActivity.this, contentActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
