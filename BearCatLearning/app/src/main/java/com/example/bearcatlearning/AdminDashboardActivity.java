@@ -7,16 +7,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 
 public class AdminDashboardActivity extends  AppCompatActivity{
-
+    private ImageButton javaImgButn;
+    private ImageButton androidImgButn;
+    private ImageButton webDevImgButn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_dashboard);
 
         // Finding  the ImageButtons by their IDs
-        ImageButton javaImgButn = findViewById(R.id.imgbutton1);
-        ImageButton androidImgButn = findViewById(R.id.imageButton2);
-        ImageButton webDevImgButn = findViewById(R.id.imageButton3);
+        javaImgButn = findViewById(R.id.imgbutton1);
+        androidImgButn = findViewById(R.id.imageButton2);
+        webDevImgButn = findViewById(R.id.imageButton3);
 
         // Set click listeners for each ImageButton
         javaImgButn.setOnClickListener(new View.OnClickListener() {
@@ -26,7 +28,6 @@ public class AdminDashboardActivity extends  AppCompatActivity{
                 startSubjectDetailActivity("Java");
             }
         });
-
         androidImgButn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -34,7 +35,6 @@ public class AdminDashboardActivity extends  AppCompatActivity{
                 startSubjectDetailActivity("Android");
             }
         });
-
         webDevImgButn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
