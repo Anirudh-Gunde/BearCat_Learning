@@ -5,94 +5,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/welcomeTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Welcome to the Admin Dashboard"
-        android:textSize="24sp"
-        android:layout_centerHorizontal="true"
-<<<<<<< Updated upstream
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-=======
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome to the Admin Dashboard"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/instructionTextView"
+            tools:ignore="HardcodedText,MissingConstraints" />
 
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@+id/instructionTextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
->>>>>>> Stashed changes
-        android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/instructionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Select the subject for the content modification"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
+            app:layout_constraintBottom_toTopOf="@+id/imgbutton1"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
 
-    <TextView
-        android:id="@+id/instructionTextView"
-        android:layout_width="416dp"
-        android:layout_height="40dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="76dp"
-        android:text="Select the subject for the content modification"
-        android:textSize="15dp"
-<<<<<<< Updated upstream
-=======
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
->>>>>>> Stashed changes
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <ImageButton
+            android:id="@+id/imgbutton1"
+            android:layout_width="124dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="JAVA"
+            android:src="@drawable/java"
+            app:layout_constraintTop_toBottomOf="@+id/instructionTextView"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+            tools:ignore="HardcodedText,MissingConstraints" />
 
-    <ImageButton
-        android:id="@+id/imgbutton1"
-        android:layout_width="124dp"
-        android:layout_height="110dp"
-        android:layout_below="@id/welcomeTextView"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="136dp"
-        android:contentDescription="JAVA"
-        android:src="@drawable/java"
-<<<<<<< Updated upstream
-        app:layout_constraintStart_toStartOf="parent"
-=======
-        app:layout_constraintEnd_toEndOf="parent"
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="135dp"
+            android:layout_height="107dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="ANDROID"
+            app:layout_constraintTop_toBottomOf="@+id/imgbutton1"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+            app:srcCompat="@drawable/android"
+            tools:ignore="HardcodedText,MissingConstraints,ImageContrastCheck" />
 
-        app:layout_constraintHorizontal_bias="0.0"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageButton3"
->>>>>>> Stashed changes
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="135dp"
-        android:layout_height="107dp"
-<<<<<<< Updated upstream
-        android:layout_marginStart="172dp"
-=======
-        android:layout_marginStart="224dp"
->>>>>>> Stashed changes
-        android:layout_marginTop="136dp"
-        android:contentDescription="ANDROID"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/newandroid" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="126dp"
-        android:layout_height="105dp"
-<<<<<<< Updated upstream
-        app:srcCompat="@drawable/webdev"
-        tools:layout_editor_absoluteX="24dp"
-        tools:layout_editor_absoluteY="267dp" />
-=======
-        android:layout_marginTop="64dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.084"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgbutton1"
-        app:srcCompat="@drawable/webdev" />
->>>>>>> Stashed changes
-
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="126dp"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Web APPS"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/webdev"
+            tools:ignore="HardcodedText,MissingConstraints,SpeakableTextPresentCheck,UnknownId" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
