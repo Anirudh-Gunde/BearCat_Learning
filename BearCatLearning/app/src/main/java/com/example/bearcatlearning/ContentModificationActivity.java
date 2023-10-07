@@ -7,32 +7,33 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class ContentModificationActivity extends AppCompatActivity{
+    private TextView subjctTxtvw;
+    private Button uploadFilebtn;
+    private  Button uploadVideobtn;
+    private String subjectTitle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_modification);
         // Find the TextView and buttons by their IDs
-        TextView subjectTitleTextView = findViewById(R.id.subjectTitleTextView);
-        Button uploadFileButton = findViewById(R.id.uploadFileButton);
-        Button uploadVideoButton = findViewById(R.id.uploadVideoButton);
-        String subjectTitle = getIntent().getStringExtra("subject_title");
-        subjectTitleTextView.setText(subjectTitle);
+       subjctTxtvw = findViewById(R.id.subjectTitleTextView);
+       uploadFilebtn = findViewById(R.id.uploadFileButton);
+       uploadVideobtn = findViewById(R.id.uploadVideoButton);
+       subjectTitle = getIntent().getStringExtra("subject_title");
+       subjctTxtvw.setText(subjectTitle);
 
-        uploadFileButton.setOnClickListener(new View.OnClickListener() {
+        uploadFilebtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //Implementing the logic here to upload the file
 
-                // You can start a file upload activity
-                //startActivity(new Intent(ContentModificationActivity.this, UploadFileActivity.class));
             }
         });
 
-        uploadVideoButton.setOnClickListener(new View.OnClickListener() {
+        uploadVideobtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                // You can start a video upload activity or perform the video upload operation here
-                // startActivity(new Intent(ContentModificationActivity.this, UploadVideoActivity.class));
+                //Implementing the logic here to upload the video
             }
         });
     }
