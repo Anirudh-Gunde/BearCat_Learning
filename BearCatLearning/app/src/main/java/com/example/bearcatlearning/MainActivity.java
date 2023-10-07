@@ -27,13 +27,13 @@ public class MainActivity extends AppCompatActivity {
                 String userID = editTextUserID.getText().toString();
                 String password = editTextPassword.getText().toString();
 
-                // Perform authentication based on userID and password
+
                 if (isStudent(userID, password)) {
-                    // Navigate to student dashboard
+
                     Intent intent = new Intent(MainActivity.this, dashboardActivity.class);
                     startActivity(intent);
                 } else if (isAdmin(userID, password)) {
-                    // Navigate to admin/professor dashboard
+
                     Intent intent = new Intent(MainActivity.this, AdminDashboardActivity.class);
                     startActivity(intent);
                 } else {
@@ -53,9 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isAdmin(String userID, String password) {
-        // Implement your admin authentication logic here
-        // Return true if userID and password match admin credentials, otherwise return false
-        // ...
+
         if(userID.equals("Professor") && password.equals("123456"))
         {
             return true;
