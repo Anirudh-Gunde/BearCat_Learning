@@ -3,6 +3,7 @@ package com.example.bearcatlearning;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -17,6 +18,8 @@ public class dashboardActivity extends AppCompatActivity {
     private ImageButton gdpIB;
     private TextView userIDTV;
 
+    private Button logoutButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,7 @@ public class dashboardActivity extends AppCompatActivity {
         userIDTV=findViewById(R.id.profileNameTV);
         String studentID = getIntent().getStringExtra("studentID");
         userIDTV.setText(studentID);
+        logoutButton = findViewById(R.id.logoutButton);
         javaIB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
