@@ -26,6 +26,7 @@
         <activity android:name=".contentActivity"></activity>
         <activity android:name=".AdminDashboardActivity"></activity>
         <activity android:name=".ContentModificationActivity"></activity>
+        <activity android:name=".JavaCourseActivity"></activity>
     </application>
 
 </manifest>

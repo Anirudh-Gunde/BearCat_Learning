@@ -1,6 +1,8 @@
 package com.example.bearcatlearning;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -61,6 +63,13 @@ public class JavaCourseActivity extends AppCompatActivity {
         recursionTV=findViewById(R.id.recursionTV);
         recursionNotesBTN=findViewById(R.id.recursionNotesBTN);
         recursionVideoBTN=findViewById(R.id.recursionVideoBTN);
+        introJavaVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
