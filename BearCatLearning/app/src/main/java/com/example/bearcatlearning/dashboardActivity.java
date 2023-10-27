@@ -34,7 +34,7 @@ public class dashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // When Java button is clicked, start MaterialAndVideosJavaActivity
-                Intent intent = new Intent(dashboardActivity.this, ContentModificationActivity.class);
+                Intent intent = new Intent(dashboardActivity.this, contentActivity.class);
                 startActivity(intent);
             }
         });
