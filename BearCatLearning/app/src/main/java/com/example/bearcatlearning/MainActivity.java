@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                 if (isStudent(userID, password)) {
 
                     Intent intent = new Intent(MainActivity.this, dashboardActivity.class);
+                    intent.putExtra("studentID",userID);
                     startActivity(intent);
                 } else if (isAdmin(userID, password)) {
 
