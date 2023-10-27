@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "194810342095",
+    "project_id": "bearcatlearning",
+    "storage_bucket": "bearcatlearning.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194810342095:android:03828a6aedab7946f025ba",
+        "android_client_info": {
+          "package_name": "com.example.bearcatlearning"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUGA1tbVppvXe_URCUCmYLy-Ozn95zmQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
