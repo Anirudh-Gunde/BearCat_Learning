@@ -50,6 +50,12 @@ public class dashboardActivity extends AppCompatActivity {
                 // Sign out the user from Firebase Authentication
                 FirebaseAuth.getInstance().signOut();
 
+                // Navigate back to the login screen (MainActivity)
+                Intent intent = new Intent(dashboardActivity.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish(); // Close the current activity to prevent the user from going back
+
             }
         });
     }
