@@ -9,6 +9,8 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class dashboardActivity extends AppCompatActivity {
     private ImageButton javaIB;
     private ImageButton adbIB;
@@ -40,6 +42,14 @@ public class dashboardActivity extends AppCompatActivity {
                 // When Java button is clicked, start MaterialAndVideosJavaActivity
                 Intent intent = new Intent(dashboardActivity.this, contentActivity.class);
                 startActivity(intent);
+            }
+        });
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Sign out the user from Firebase Authentication
+                FirebaseAuth.getInstance().signOut();
+
             }
         });
     }
