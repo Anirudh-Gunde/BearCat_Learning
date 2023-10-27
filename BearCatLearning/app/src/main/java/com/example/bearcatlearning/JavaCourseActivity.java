@@ -70,6 +70,104 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        objAndClassesVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        primitiveVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        conditionsVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        selectionVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        repetitionVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        fileIOVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        arraysVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        debuggingVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        testingVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        enumVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        abstractVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        interfaceVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        exceptionVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        recursionVideoBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
