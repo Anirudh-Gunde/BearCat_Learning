@@ -34,31 +34,46 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String userID = editTextUserID.getText().toString();
                 String password = editTextPassword.getText().toString();
-                firebaseAuth.signInWithEmailAndPassword(userID, password)
-                        .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
-                                    // Check if user exists in the Realtime Database
-                                    Toast.makeText(getApplicationContext(),
-                                                    "Login successful!!",
-                                                    Toast.LENGTH_LONG)
-                                            .show();
 
-                                    // If sign-in is successful, navigate to the dashboard activity
-                                    Intent intent = new Intent(MainActivity.this, dashboardActivity.class);
-                                    startActivity(intent);
-                                    finish(); // Close the current activity to prevent the user from going back
-                                } else {
-                                    // Sign-in failed
-                                    Toast.makeText(getApplicationContext(),
-                                                    "Login failed!!",
-                                                    Toast.LENGTH_LONG)
-                                            .show();
-                                    // Handle failed login
+                if ("Professor".equals(userID) && "123456".equals(password)) {
+                    // Admin credentials entered, grant admin access
+                    Toast.makeText(getApplicationContext(),
+                                    "Admin login successful!!",
+                                    Toast.LENGTH_LONG)
+                            .show();
+
+                    // Grant admin privileges and navigate to admin activity
+                    Intent adminIntent = new Intent(MainActivity.this, AdminDashboardActivity.class);
+                    startActivity(adminIntent);
+                    finish(); // Close the current activity to prevent the user from going back
+                } else {
+                    // Regular user login attempt
+                    firebaseAuth.signInWithEmailAndPassword(userID, password)
+                            .addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                                @Override
+                                public void onComplete(@NonNull Task<AuthResult> task) {
+                                    if (task.isSuccessful()) {
+                                        // User login successful
+                                        Toast.makeText(getApplicationContext(),
+                                                        "Login successful!!",
+                                                        Toast.LENGTH_LONG)
+                                                .show();
+
+                                        // If sign-in is successful, navigate to the dashboard activity
+                                        Intent intent = new Intent(MainActivity.this, dashboardActivity.class);
+                                        startActivity(intent);
+                                        finish(); // Close the current activity to prevent the user from going back
+                                    } else {
+                                        // Sign-in failed
+                                        Toast.makeText(getApplicationContext(),
+                                                        "Login failed!!",
+                                                        Toast.LENGTH_LONG)
+                                                .show();
+                                        // Handle failed login
+                                    }
                                 }
-                            }
-                        });
+                            });
+                }
             }
         });
     }
