@@ -37,6 +37,9 @@ public class ContentModificationActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 //Implementing the logic here to upload the video
+                //Working on the implementation for UploadFileActivity class
+                // Intent intent = new Intent(ContentModificationActivity.this, UploadVideoActivity.class);
+                // startActivity(intent);
             }
         });
     }
