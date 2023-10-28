@@ -70,10 +70,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        introJavaNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         objAndClassesVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        objAndClassesNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -84,10 +98,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        primitiveNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         conditionsVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        conditionsNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -98,10 +126,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        selectionNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         repetitionVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        repetitionNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -112,10 +154,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        fileIONotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         arraysVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        arraysNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -126,10 +182,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        debuggingNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         testingVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        testingNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -140,10 +210,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        enumNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         abstractVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        abstractNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
@@ -154,6 +238,13 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        interfaceNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         exceptionVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,10 +252,24 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        exceptionNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
+                startActivity(intent);
+            }
+        });
         recursionVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
+                startActivity(intent);
+            }
+        });
+        recursionNotesBTN.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
                 startActivity(intent);
             }
         });
