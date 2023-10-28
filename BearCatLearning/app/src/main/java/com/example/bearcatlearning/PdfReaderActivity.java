@@ -1,6 +1,7 @@
 package com.example.bearcatlearning;
 
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -12,6 +13,7 @@ public class PdfReaderActivity extends AppCompatActivity {
     //added code for firebase storage
     //private FirebaseFirestore db;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,10 +24,10 @@ public class PdfReaderActivity extends AppCompatActivity {
 
          // Reference to the Firestore document you want to read
          DocumentReference documentRef = db.collection("your_collection").document("your_document_id");
-
+*/
          // Initialize the TextView
          documentDataTextView = findViewById(R.id.document_data);
-
+/**
          // Fetch the document data
          documentRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
         @Override
