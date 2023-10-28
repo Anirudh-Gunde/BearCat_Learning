@@ -26,6 +26,8 @@ public class ContentModificationActivity extends AppCompatActivity{
             @Override
             public void onClick(View view) {
                 //Implementing the logic here to upload the file
+                Intent intent = new Intent(ContentModificationActivity.this, UploadFileActivity.class);
+                startActivity(intent);
 
             }
         });
