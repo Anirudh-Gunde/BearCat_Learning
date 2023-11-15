@@ -50,10 +50,10 @@ public class ContentModificationActivity extends AppCompatActivity{
                 //Working on the implementation for UploadFileActivity class
                 // Intent intent = new Intent(ContentModificationActivity.this, UploadVideoActivity.class);
                 // startActivity(intent);
-                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-                intent.setType("video/*"); // Set MIME type to select video files
-                startActivityForResult(intent, 2);
-                //openVideoPicker();
+                //Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                //intent.setType("video/*"); // Set MIME type to select video files
+                //startActivityForResult(intent, 2);
+                openVideoPicker();
             }
         });
     }
@@ -77,27 +77,9 @@ public class ContentModificationActivity extends AppCompatActivity{
         intent.setType("*/*"); // Set MIME type to select any type of file
         startActivityForResult(intent, 1);
     }
-
-
-/*
-    private void uploadFileToFirebase(Uri fileUri) {
-        // Create a reference to the Firebase Storage location
-        FirebaseStorage storage = FirebaseStorage.getInstance();
-        StorageReference storageRef = storage.getReference();
-
-        // Create a reference to the file path in Firebase Storage
-        StorageReference fileRef = storageRef.child("uploads/" + fileUri.getLastPathSegment());
-
-        // Start the upload process
-        fileRef.putFile(fileUri)
-                .addOnSuccessListener(taskSnapshot -> {
-                    // File upload is successful
-                    // Handle successful uploads (e.g., show a success message)
-                    Toast.makeText(getApplicationContext(), "File uploaded successfully", Toast.LENGTH_SHORT).show();
-                })
-                .addOnFailureListener(e -> {
-                    // Handle unsuccessful uploads (e.g., display an error message)
-                    Toast.makeText(getApplicationContext(), "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
-                });
-    } */
+    private void openVideoPicker() {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("video/*"); // Set MIME type to select video files
+        startActivityForResult(intent, 2);
+    }
 }
