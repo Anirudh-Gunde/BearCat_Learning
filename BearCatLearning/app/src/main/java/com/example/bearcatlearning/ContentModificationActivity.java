@@ -1,10 +1,17 @@
 package com.example.bearcatlearning;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class ContentModificationActivity extends AppCompatActivity{
     private TextView subjctTxtvw;
@@ -29,7 +36,10 @@ public class ContentModificationActivity extends AppCompatActivity{
                 //Working on the implementation for UploadFileActivity class
                // Intent intent = new Intent(ContentModificationActivity.this, UploadFileActivity.class);
                // startActivity(intent);
-
+               //Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+               //intent.setType("*/*"); // Set MIME type to select any type of file
+                //startActivityForResult(intent, 1);
+               openFilePicker();
             }
         });
 
@@ -40,7 +50,54 @@ public class ContentModificationActivity extends AppCompatActivity{
                 //Working on the implementation for UploadFileActivity class
                 // Intent intent = new Intent(ContentModificationActivity.this, UploadVideoActivity.class);
                 // startActivity(intent);
+                Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+                intent.setType("video/*"); // Set MIME type to select video files
+                startActivityForResult(intent, 2);
+                //openVideoPicker();
             }
         });
     }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (resultCode == RESULT_OK && data != null) {
+            Uri selectedUri = data.getData();
+
+            if (requestCode == 1) {
+                UploadFileActivity.uploadFileToFirebase(this, selectedUri);
+            } else if (requestCode == 2) {
+                //VideoUploadHandler.uploadVideoToFirebase(this, selectedUri);
+            }
+        }
+    }
+
+    private void openFilePicker() {
+        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+        intent.setType("*/*"); // Set MIME type to select any type of file
+        startActivityForResult(intent, 1);
+    }
+
+
+/*
+    private void uploadFileToFirebase(Uri fileUri) {
+        // Create a reference to the Firebase Storage location
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference();
+
+        // Create a reference to the file path in Firebase Storage
+        StorageReference fileRef = storageRef.child("uploads/" + fileUri.getLastPathSegment());
+
+        // Start the upload process
+        fileRef.putFile(fileUri)
+                .addOnSuccessListener(taskSnapshot -> {
+                    // File upload is successful
+                    // Handle successful uploads (e.g., show a success message)
+                    Toast.makeText(getApplicationContext(), "File uploaded successfully", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    // Handle unsuccessful uploads (e.g., display an error message)
+                    Toast.makeText(getApplicationContext(), "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+    } */
 }

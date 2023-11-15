@@ -15,100 +15,28 @@ import com.google.firebase.storage.UploadTask;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class UploadFileActivity extends Activity{
+import android.content.Context;
+import android.net.Uri;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
-    private static final int FILE_UPLOAD_REQUEST_CODE = 1;
-    private DatabaseReference databaseReference;
-    private StorageReference storageReference;
+public class UploadFileActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        openFilePicker();
+    public static void uploadFileToFirebase(Context context, Uri fileUri) {
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        StorageReference storageRef = storage.getReference();
+        StorageReference fileRef = storageRef.child("uploads/" + fileUri.getLastPathSegment());
 
-        // Initialize Firebase Realtime Database reference
-        databaseReference = FirebaseDatabase.getInstance().getReference().child("files"); // Replace with your desired database path
-
-        // Initialize Firebase Storage reference
-        storageReference = FirebaseStorage.getInstance().getReference().child("uploads"); // Replace with your desired storage path
-    }
-
-    private void openFilePicker() {
-        Intent fileIntent = new Intent(Intent.ACTION_GET_CONTENT);
-        fileIntent.setType("*/*"); // Allow all file types extensions
-        startActivityForResult(fileIntent, FILE_UPLOAD_REQUEST_CODE);
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if (requestCode == FILE_UPLOAD_REQUEST_CODE && resultCode == RESULT_OK) {
-            Uri fileUri = data.getData();
-
-            if (fileUri != null) {
-                uploadFileToFirebaseStorage(fileUri);
-            } else {
-                showToast("File selection failed");
-            }
-            finish();
-        } else {
-            showToast("File selection canceled");
-            finish();
-        }
-    }
-
-    private void showToast(String message) {
-        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
-    }
-
-    private void uploadFileToFirebaseStorage(Uri fileUri) {
-        // Create a unique key for the file
-        String fileId = databaseReference.push().getKey();
-
-        // Define the StorageReference for the file in Firebase Storage
-        StorageReference fileRef = storageReference.child(fileId);
-
-        try {
-            InputStream inputStream = getContentResolver().openInputStream(fileUri);
-
-            UploadTask uploadTask = fileRef.putStream(inputStream);
-
-            uploadTask.addOnSuccessListener(taskSnapshot -> {
-                // File uploaded successfully, get the download URL
-                fileRef.getDownloadUrl().addOnSuccessListener(uri -> {
-                    String downloadUrl = uri.toString();
-                    storeFileMetadataInDatabase(fileId, downloadUrl);
+        // Start the upload process
+        fileRef.putFile(fileUri)
+                .addOnSuccessListener(taskSnapshot -> {
+                    // File upload is successful
+                    // Handle successful uploads (e.g., show a success message)
+                    Toast.makeText(context, "File uploaded successfully", Toast.LENGTH_SHORT).show();
+                })
+                .addOnFailureListener(e -> {
+                    // Handle unsuccessful uploads (e.g., display an error message)
+                    Toast.makeText(context, "Upload failed: " + e.getMessage(), Toast.LENGTH_SHORT).show();
                 });
-            }).addOnFailureListener(e -> showToast("File upload failed: " + e.getMessage()));
-        } catch (IOException e) {
-            e.printStackTrace();
-            showToast("Failed to read file: " + e.getMessage());
-        }
-    }
-    private void storeFileMetadataInDatabase(String fileId, String downloadUrl) {
-        // Create a data object to represent the file metadata
-        FileMetadata fileMetadata = new FileMetadata(downloadUrl);
-
-        // Store the metadata in Firebase Realtime Database
-        databaseReference.child(fileId).setValue(fileMetadata)
-                .addOnSuccessListener(aVoid -> showToast("File metadata stored in Firebase Database"))
-                .addOnFailureListener(e -> showToast("Failed to store file metadata: " + e.getMessage()));
-    }
-
-    private class FileMetadata {
-        private String downloadUrl;
-
-        public FileMetadata() {
-            // Default constructor required for Firebase Realtime Database
-        }
-
-        public FileMetadata(String downloadUrl) {
-            this.downloadUrl = downloadUrl;
-        }
-
-        public String getDownloadUrl() {
-            return downloadUrl;
-        }
     }
 }
