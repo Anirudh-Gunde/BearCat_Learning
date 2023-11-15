@@ -17,7 +17,7 @@ public class PdfReaderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_pdfreader);
         /** added code for database loading pdf files from firebase and reading it to the layout
          // Initialize the Firestore instance
          db = FirebaseFirestore.getInstance();
