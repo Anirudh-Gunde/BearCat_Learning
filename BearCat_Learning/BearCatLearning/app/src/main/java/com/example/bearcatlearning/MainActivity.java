@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String userID = editTextUserID.getText().toString();
+                String username= userID.split("@")[0];
                 String password = editTextPassword.getText().toString();
 
                 if ("Professor".equals(userID) && "123456".equals(password)) {
@@ -44,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
                     // Grant admin privileges and navigate to admin activity
                     Intent adminIntent = new Intent(MainActivity.this, AdminDashboardActivity.class);
+                    adminIntent.putExtra("Admin",username);
                     startActivity(adminIntent);
                     finish(); // Close the current activity to prevent the user from going back
                 } else {
@@ -61,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
 
                                         // If sign-in is successful, navigate to the dashboard activity
                                         Intent intent = new Intent(MainActivity.this, dashboardActivity.class);
+                                        intent.putExtra("Student",username);
                                         startActivity(intent);
                                         finish(); // Close the current activity to prevent the user from going back
                                     } else {

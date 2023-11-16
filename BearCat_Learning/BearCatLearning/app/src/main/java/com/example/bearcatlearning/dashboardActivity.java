@@ -33,10 +33,50 @@ public class dashboardActivity extends AppCompatActivity {
         patternsIB=findViewById(R.id.patternsIB);
         gdpIB=findViewById(R.id.gdpIB);
         userIDTV=findViewById(R.id.profileNameTV);
-        String studentID = getIntent().getStringExtra("studentID");
+        String studentID = getIntent().getStringExtra("Student");
         userIDTV.setText(studentID);
         logoutButton = findViewById(R.id.logoutButton);
         javaIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When Java button is clicked, start MaterialAndVideosJavaActivity
+                Intent intent = new Intent(dashboardActivity.this, JavaCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+        adbIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When Java button is clicked, start MaterialAndVideosJavaActivity
+                Intent intent = new Intent(dashboardActivity.this, JavaCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+        webdevIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When Java button is clicked, start MaterialAndVideosJavaActivity
+                Intent intent = new Intent(dashboardActivity.this, JavaCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+        androidIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When Java button is clicked, start MaterialAndVideosJavaActivity
+                Intent intent = new Intent(dashboardActivity.this, JavaCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+        patternsIB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // When Java button is clicked, start MaterialAndVideosJavaActivity
+                Intent intent = new Intent(dashboardActivity.this, JavaCourseActivity.class);
+                startActivity(intent);
+            }
+        });
+        gdpIB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // When Java button is clicked, start MaterialAndVideosJavaActivity
