@@ -1,52 +1,47 @@
 package com.example.bearcatlearning;
-
-
-import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.TextView;
+import android.webkit.WebSettings;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class PdfReaderActivity extends AppCompatActivity {
 
-    private TextView documentDataTextView;
-    //added code for firebase storage
-    //private FirebaseFirestore db;
+    private WebView pdfWebView;
+    private FirebaseStorage firebaseStorage;
+    private StorageReference storageReference;
 
-    @SuppressLint("MissingInflatedId")
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pdfreader);
-        /** added code for database loading pdf files from firebase and reading it to the layout
-         // Initialize the Firestore instance
-         db = FirebaseFirestore.getInstance();
 
-         // Reference to the Firestore document you want to read
-         DocumentReference documentRef = db.collection("your_collection").document("your_document_id");
-*/
-         // Initialize the TextView
-         documentDataTextView = findViewById(R.id.document_data);
-/**
-         // Fetch the document data
-         documentRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-        @Override
-        public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-        if (task.isSuccessful()) {
-        DocumentSnapshot document = task.getResult();
-        if (document.exists()) {
-        // Document data exists; display it in the TextView
-        String documentData = document.getData().toString();
-        documentDataTextView.setText(documentData);
-        } else {
-        documentDataTextView.setText("Document does not exist");
-        }
-        } else {
-        // Handle errors
-        documentDataTextView.setText("Error fetching document");
-        }
-        }
+        pdfWebView = findViewById(R.id.pdfWebView);
+        firebaseStorage = FirebaseStorage.getInstance();
+        storageReference = firebaseStorage.getReference().child("Constructors.pptx"); // Replace with your PDF file name
+
+        displayPdf();
+    }
+
+    private void displayPdf() {
+        WebSettings webSettings = pdfWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+
+        pdfWebView.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                view.loadUrl(url);
+                return true;
+            }
         });
-         **/
+
+        storageReference.getDownloadUrl().addOnSuccessListener(uri -> {
+            pdfWebView.loadUrl("https://drive.google.com/viewerng/viewer?embedded=true&url=" + uri.toString());
+        });
     }
 }
