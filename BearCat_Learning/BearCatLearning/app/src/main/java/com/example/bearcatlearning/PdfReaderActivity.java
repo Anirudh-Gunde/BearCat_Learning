@@ -1,5 +1,7 @@
 package com.example.bearcatlearning;
+
 import android.os.Bundle;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
@@ -37,6 +39,16 @@ public class PdfReaderActivity extends AppCompatActivity {
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
                 view.loadUrl(url);
                 return true;
+            }
+
+            // Override shouldOverrideUrlLoading with WebResourceRequest for API level 24 and above
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                    view.loadUrl(request.getUrl().toString());
+                    return true;
+                }
+                return super.shouldOverrideUrlLoading(view, request);
             }
         });
 
