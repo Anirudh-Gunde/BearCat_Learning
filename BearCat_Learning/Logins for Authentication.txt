@@ -1,0 +1,7 @@
+Logins for Student dashboard:
+ID: nishanthraju2001@gmail.com pw: 123456
+ID: anirudh.gunde1@gmail.com pw:123456
+
+Login for Professor dashboard:
+
+ID: Professor pw:123456
