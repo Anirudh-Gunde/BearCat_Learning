@@ -67,7 +67,7 @@ public class ContentModificationActivity extends AppCompatActivity{
             if (requestCode == 1) {
                 UploadFileActivity.uploadFileToFirebase(this, selectedUri);
             } else if (requestCode == 2) {
-                //VideoUploadHandler.uploadVideoToFirebase(this, selectedUri);
+                UploadVideoActivity.uploadVideoToFirebase(this, selectedUri);
             }
         }
     }
