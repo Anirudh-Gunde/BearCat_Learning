@@ -31,7 +31,7 @@
                 android:id="@+id/introJavaTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Introduction to java"/>
+                android:text="Introduction"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -48,41 +48,41 @@
                     android:text="View Video"/>
             </LinearLayout>
             <TextView
-                android:id="@+id/objAndClassesTV"
+                android:id="@+id/classesTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Objects and Classes"/>
+                android:text="How to write a class?"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/objAndClassesNotesBTN"
+                    android:id="@+id/classesNotesBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Notes"/>
                 <Button
-                    android:id="@+id/objAndClassesVideoBTN"
+                    android:id="@+id/classesVideoBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Video"/>
             </LinearLayout>
             <TextView
-                android:id="@+id/primitiveTV"
+                android:id="@+id/ternaryTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Primitive Types"/>
+                android:text="How to use ternary operator?"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/primitiveNotesBTN"
+                    android:id="@+id/ternaryNotesBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Notes"/>
                 <Button
-                    android:id="@+id/primitiveVideoBTN"
+                    android:id="@+id/ternaryVideoBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Video"/>
@@ -91,7 +91,7 @@
                 android:id="@+id/conditionsTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Conditions"/>
+                android:text="How to write conditional statements?"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -108,61 +108,61 @@
                     android:text="View Video"/>
             </LinearLayout>
             <TextView
-                android:id="@+id/selectionTV"
+                android:id="@+id/inheritanceTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Selection"/>
+                android:text="How implement inheritance?"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/selectionNotesBTN"
+                    android:id="@+id/inheritanceNotesBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Notes"/>
                 <Button
-                    android:id="@+id/selectionVideoBTN"
+                    android:id="@+id/inheritanceVideoBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Video"/>
             </LinearLayout>
             <TextView
-                android:id="@+id/repetitionTV"
+                android:id="@+id/recursiveTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Repetition"/>
+                android:text="How to write recursive function?"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/repetitionNotesBTN"
+                    android:id="@+id/recursiveNotesBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Notes"/>
                 <Button
-                    android:id="@+id/repetitionVideoBTN"
+                    android:id="@+id/recursiveVideoBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Video"/>
             </LinearLayout>
             <TextView
-                android:id="@+id/fileIOTV"
+                android:id="@+id/sortingTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="File Input and Output"/>
+                android:text="Implementing insertion sort"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
                 <Button
-                    android:id="@+id/fileIONotesBTN"
+                    android:id="@+id/sortingNotesBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Notes"/>
                 <Button
-                    android:id="@+id/fileIOVideoBTN"
+                    android:id="@+id/sortingVideosBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Video"/>
@@ -171,7 +171,7 @@
                 android:id="@+id/arraysTV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Arrays"/>
+                android:text="Implementing 2D Array"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -183,146 +183,6 @@
                     android:text="View Notes"/>
                 <Button
                     android:id="@+id/arraysVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/debuggingTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Debugging"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/debuggingNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/debuggingVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/testingTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Testing"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/testingNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/testingVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/enumTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Enumerated Types"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/enumNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/enumVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/abstractTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Abstract Class"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/abstractNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/abstractVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/interfaceTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Interface"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/interfaceNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/interfaceVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/exceptionsTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Exceptions"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/exceptionNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/exceptionVideoBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Video"/>
-            </LinearLayout>
-            <TextView
-                android:id="@+id/recursionTV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Recursion"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/recursionNotesBTN"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="View Notes"/>
-                <Button
-                    android:id="@+id/recursionVideoBTN"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="View Video"/>
