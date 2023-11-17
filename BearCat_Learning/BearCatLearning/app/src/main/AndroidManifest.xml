@@ -15,7 +15,7 @@
         android:theme="@style/Theme.BearCatLearning"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".AnimationActivity"
 
             android:exported="true">
             <intent-filter>
@@ -24,6 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".MainActivity"></activity>
         <activity android:name=".dashboardActivity"></activity>
         <activity android:name=".contentActivity"></activity>
         <activity android:name=".AdminDashboardActivity"></activity>
