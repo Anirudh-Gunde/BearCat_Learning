@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/headerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Java Programming"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_marginStart="98dp"/>
+    <TextView
+        android:id="@+id/courseTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Modules :"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/introJavaTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Introduction to java"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/introNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/introVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/objAndClassesTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Objects and Classes"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/objAndClassesNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/objAndClassesVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/primitiveTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primitive Types"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/primitiveNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/primitiveVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/conditionsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Conditions"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/conditionNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/conditionVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/selectionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selection"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/selectionNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/selectionVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/repetitionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Repetition"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/repetitionNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/repetitionVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/fileIOTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="File Input and Output"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/fileIONotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/fileIOVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/arraysTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Arrays"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/arraysNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/arraysVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/debuggingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debugging"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/debuggingNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/debuggingVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/testingTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Testing"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/testingNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/testingVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/enumTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enumerated Types"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/enumNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/enumVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/abstractTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abstract Class"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/abstractNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/abstractVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/interfaceTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interface"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/interfaceNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/interfaceVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/exceptionsTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exceptions"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/exceptionNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/exceptionVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/recursionTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recursion"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/recursionNotesBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Notes"/>
+                <Button
+                    android:id="@+id/recursionVideoBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Video"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

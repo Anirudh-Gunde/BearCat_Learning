@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_patterns.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\patterns.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\layout_content_modification.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\layout\\content_modification.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\layout_activity_content.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\layout\\activity_content.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_img.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\img.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_java.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\java.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\layout_java_course_syllabus.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\layout\\java_course_syllabus.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_img_1.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\img_1.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_newandroid.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\newandroid.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_pm.jpg.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\pm.jpg"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\layout_dashboard.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\layout\\dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_adb.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\adb.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_android.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\android.png"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.bearcatlearning.app-merged_res-33:/layout_activity_pdfreader.xml.flat",
+        "source": "com.example.bearcatlearning.app-main-35:/layout/activity_pdfreader.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-anydpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\layout_admin_dashboard.xml.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\layout\\admin_dashboard.xml"
+    },
+    {
+        "merged": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-merged_res-33:\\drawable_webdev.png.flat",
+        "source": "C:\\Users\\S560726\\.gradle\\daemon\\8.0\\com.example.bearcatlearning.app-main-35:\\drawable\\webdev.png"
+    }
+]

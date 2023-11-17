@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Welcome to the Admin Dashboard"
+            android:textSize="24sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/instructionTextView"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <TextView
+            android:id="@+id/instructionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Select the subject for the content modification"
+            android:textSize="15sp"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
+            app:layout_constraintBottom_toTopOf="@+id/imgbutton1"
+            tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck" />
+
+        <ImageButton
+            android:id="@+id/imgbutton1"
+            android:layout_width="124dp"
+            android:layout_height="110dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="JAVA"
+            android:src="@drawable/java"
+            app:layout_constraintTop_toBottomOf="@+id/instructionTextView"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton2"
+            tools:ignore="HardcodedText,MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="135dp"
+            android:layout_height="107dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="ANDROID"
+            app:layout_constraintTop_toBottomOf="@+id/imgbutton1"
+            app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+            app:srcCompat="@drawable/android"
+            tools:ignore="HardcodedText,MissingConstraints,ImageContrastCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="126dp"
+            android:layout_height="105dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Web APPS"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/webdev"
+            tools:ignore="HardcodedText,MissingConstraints,SpeakableTextPresentCheck,UnknownId" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

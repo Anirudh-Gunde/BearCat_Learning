@@ -31,6 +31,7 @@
         <activity android:name=".ContentModificationActivity"></activity>
         <activity android:name=".JavaCourseActivity"></activity>
         <activity android:name=".PdfReaderActivity"></activity>
+
     </application>
 
 </manifest>
