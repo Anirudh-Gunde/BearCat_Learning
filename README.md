@@ -42,7 +42,7 @@ Sequence Information: <br>
 Dashboard (Student View): <br>
 <b>Purpose:</b> Display a personalized dashboard for students where they can see a list of their enrolled courses and access course materials. <br>
 <b>Data: </b>Student profile, enrolled courses. <br>
-Dashboard.xml <br>
+<b>Dashboard.xml </b><br>
 Student dashboard Layout: Created the student dashboard layout where after student has been logged in this layout will be appeared and it <br> has the one text view and six image buttons each image button represents one singe course. After user clicking on the course it will be directed to next layout. <br>
 Course List Layout : Created course list layout for the specific course and added the text views and view file button and view video button.<br>
 Created java files for the layouts and added the fuctionality for the files.<br>
