@@ -11,7 +11,6 @@ Application Information:   <br>
 The Application has two kinds of logins. <br>
 1. Student Login 2. Admin Login. <br>
 
-
 Login Credentails for Student Access: <br>
  1. UserName: manasaakula970@gmail.com  <br>
      Password: manasa    <br>
@@ -21,8 +20,7 @@ Login Credentails for Student Access: <br>
      Password:  <br>
  4. UserName:  <br>
      Password:  <br>
-
-
+     
 Login Credentials for Admin Access: <br>
 
   UserName: Professor <br>
@@ -31,7 +29,12 @@ Login Credentials for Admin Access: <br>
 Firebase database link which is used as storage for our application: <br>
 https://console.firebase.google.com/u/0/project/bearcatlearning/overview  <br>
 
-APK file Link: 
+APK file Link: <br>
+
+Supported devices: <br>
+
+Sequence Information: <br>
+
 
 <b>Contribution of individual team members:</b><br>
 
