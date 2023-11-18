@@ -29,7 +29,7 @@ Login Credentials for Admin Access: <br>
 Firebase database link which is used as storage for our application: <br>
 https://console.firebase.google.com/u/0/project/bearcatlearning/overview  <br>
 
-APK file Link: <br> [apkdebug.apk](BearCat_Learning\BearCatLearning\app\build\outputs\apk\debug)
+APK file Link: <br> [apkdebug.apk]([BearCat_Learning\BearCatLearning\app\build\outputs\apk\debug](https://github.com/Anirudh-Gunde/BearCat_Learning/blob/main/app-debug.apk)
 
 Supported devices: <br> All the android devices with latest versions
 
