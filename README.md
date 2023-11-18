@@ -16,8 +16,8 @@ Login Credentails for Student Access: <br>
      Password: manasa    <br>
  2. UserName:  nishanthraju2001@gmail.com<br>
      Password:  nishanth<br>
- 3. UserName:  <br>
-     Password:  <br>
+ 3. UserName:  anirudh.gunde1@gmail.com<br>
+     Password:  123456<br>
  4. UserName:  <br>
      Password:  <br>
      
