@@ -18,8 +18,8 @@ Login Credentails for Student Access: <br>
      Password:  nishanth<br>
  3. UserName:  anirudh.gunde1@gmail.com<br>
      Password:  123456<br>
- 4. UserName:   Joyce Meyer, Lingam<br>
-     Password:  123456  <br>
+ 4. UserName:   Joycemeyerlingam03@gmail.com<br>
+     Password: Joyce@123456  <br>
      
 Login Credentials for Admin Access: <br>
 
