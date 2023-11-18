@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@drawable/img_2"
     tools:ignore="ExtraText">
 
 
@@ -28,7 +29,7 @@
         android:layout_width="373dp"
         android:layout_height="274dp"
         android:layout_marginBottom="100dp"
-        android:src="@drawable/img"
+        android:src="@drawable/img_3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
@@ -60,7 +61,7 @@
         tools:ignore="HardcodedText,MissingConstraints,TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/login_button"
-        android:layout_width="wrap_content"
+        android:layout_width="2in"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
         android:text="Login"
@@ -68,6 +69,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/password_edittext"
         tools:ignore="HardcodedText,MissingConstraints"
+        android:backgroundTint="@android:color/black"
         tools:layout_editor_absoluteX="161dp" />
 
 
