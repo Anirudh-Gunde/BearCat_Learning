@@ -2,14 +2,21 @@ package com.example.bearcatlearning;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 
 public class AdminDashboardActivity extends  AppCompatActivity{
     private ImageButton javaImgButn;
     private ImageButton androidImgButn;
     private ImageButton webDevImgButn;
+    private TextView usernameTV;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +26,11 @@ public class AdminDashboardActivity extends  AppCompatActivity{
         javaImgButn = findViewById(R.id.imgbutton1);
         androidImgButn = findViewById(R.id.imageButton2);
         webDevImgButn = findViewById(R.id.imageButton3);
+        usernameTV = findViewById(R.id.usernameTV);
+
+
+        String studentID = getIntent().getStringExtra("Admin");
+        usernameTV.setText(studentID);
 
         // Set click listeners for each ImageButton
         javaImgButn.setOnClickListener(new View.OnClickListener() {
@@ -41,6 +53,7 @@ public class AdminDashboardActivity extends  AppCompatActivity{
                 startSubjectDetailActivity("Web Development");
             }
         });
+
     }
     private void startSubjectDetailActivity(String subjectTitle) {
         Intent intent = new Intent(this, ContentModificationActivity.class);
