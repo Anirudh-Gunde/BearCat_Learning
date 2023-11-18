@@ -67,9 +67,10 @@ Created the required java files(AdminDashboardActivity,ContentModificationActivi
 Added required  permissions to access the Internet and Storage, Firebase storage dependecies, google-services.json file to the app.
 
 <b>Anirudh Gunde:</b><br>
-<b>Login Page:</b><br>
-<b>Firebase Connection:</b><br>
-<b>Video Player Layout:</b><br>
+<b>Login Page</b><br>
+<b>Firebase Connection</b><br>
+<b>Video Player Layout</b><br>
+<b>PDFReader Layout </b> <br>
 
 <b>Login Page Layout (activity_main.xml):</b><br>
 Created login page with the logo of the app and a background image with input fields UserId and Password, along with a login button. Implemented logic for retrieving credentials from Firebase authentication for students and added admin logins exclusively for professors in the Java file.<br>
@@ -79,7 +80,7 @@ Integrated the entire application with Firebase for using authentication with us
 
 <b>Video Player Layout:</b><br>
 Added a VideoView component for playing a video fetched from Firebase, uploaded by the admin.<br>
-<b>Pdf Layout:</b><br>
+<b>PDFReader Layout:</b><br>
 Added some logic for retrieving documents from Firebase.<br>
 
 <b>Purpose:</b><br>
