@@ -71,6 +71,7 @@ Added required  permissions to access the Internet and Storage, Firebase storage
 <b>Firebase Connection: <b> Integrated the entire application with Firebase for using the authentication with users having email and passwords as their credentials, Firebase storage for storing all the documents and videos where admin can upload. Added all the team members into the firebase project and accessed them as the owner of the app with all the permissions.  <br>
 
 <b>Video Player layout : <b>Added videoview for component for playing a video fetched from firebase uploaded by the admin. <br>
+<b>Pdf Layout: Added some logic in retrieving document from firebase.<b>
 
 <b>Purpose: <b>having a personalized logins for students and professors separately will be flexible to use the app with ease <br>
 
@@ -89,5 +90,6 @@ These colors can be referenced and applied throughout the app's layout and styli
 Enhances the visual appeal of the admin interface, providing a more engaging and personalized experienceEnsured that styling choices are responsive across various screen sizes and orientations, optimizing the user experience on different devices.<br>
 
 <b>Student Login: added background images for each layout and some styling for student login.Incorporated background images designed specifically for the student login screens. Created an immersive and welcoming atmosphere, making the login experience visually appealing.<br>
+<b>Pdfreader layout: added layout for reading any document<b>
 
 
