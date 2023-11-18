@@ -33,18 +33,28 @@ https://console.firebase.google.com/u/0/project/bearcatlearning/overview  <br>
 
 APK file Link: 
 
-Contributions: <br>
+<b>Contribution of individual team members:</b><br>
 
-Nishanth Raju : <br>
+<b>Nishanth Raju :</b> <br>
 Dashboard (Student View): <br>
-
+<b>Purpose:</b> Display a personalized dashboard for students where they can see a list of their enrolled courses and access course materials. <br>
+<b>Data: </b>Student profile, enrolled courses. <br>
 Dashboard.xml <br>
-
 Student dashboard Layout: Created the student dashboard layout where after student has been logged in this layout will be appeared and it <br> has the one text view and six image buttons each image button represents one singe course. After user clicking on the course it will be directed to next layout. <br>
 Course List Layout : Created course list layout for the specific course and added the text views and view file button and view video button.<br>
 Created java files for the layouts and added the fuctionality for the files.<br>
 Added the animation for the app when the app is opened.<br>
 
-Purpose: Display a personalized dashboard for students where they can see a list of their enrolled courses and access course materials. <br>
+<b>Manasa Akula :</b> <br>
 
-Data: Student profile, enrolled courses. <br>
+<b>Dashboard (Professor View/Admin): </b> <br>
+<b>Purpose:</b> Display a personalized dashboard for admins where they can see a list of courses to make the content modification like uploading files/videos. <br>
+<b>Data:</b> Admin profile, Courses List, Material uploads file/videos. <br>
+<b>admin_dashboard.xml</b> <br>
+Created a Admin Dashboard layout where after the admin has been logged into the application this layout will be appeared. In this layout user can see his/her username on the top, welcome message, hint a message(select the subject for content modification) and there are few image buttons which represents different subjects. <br>
+User/Admin can choose any subject to do content modification(File/Video Upload). At the below there is logout button which will redirect to main login page. <br>
+<b>content_modification.xml</b>  <br>
+After user(admin) click on any subject this layout will appeared. It has two buttons which are UploadFile, UpoloadVideo. Admin can choose based on his choice. The files/Videos will be stored into firebase database of our project. <br>
+Created the required java files(AdminDashboardActivity,ContentModificationActivity,UploadFileActivity,UploadVideoActivity) and layouts(admin_dashboard,content_modification). <br>
+Added required  permissions to access the Internet and Storage, Firebase storage dependecies, google-services.json file to the app.
+
