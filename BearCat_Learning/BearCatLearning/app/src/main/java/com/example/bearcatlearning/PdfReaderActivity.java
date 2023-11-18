@@ -33,13 +33,15 @@ public class PdfReaderActivity extends AppCompatActivity {
     private void displayPdf() {
         WebSettings webSettings = pdfWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
+        webSettings.setBuiltInZoomControls(true);
+        webSettings.setDisplayZoomControls(false);
 
         pdfWebView.setWebViewClient(new WebViewClient() {
-            @Override
-            public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                view.loadUrl(url);
-                return true;
-            }
+           // @Override
+            //public boolean shouldOverrideUrlLoading(WebView view, String url) {
+              //  view.loadUrl(url);
+                //return true;
+            //}
 
             // Override shouldOverrideUrlLoading with WebResourceRequest for API level 24 and above
             @Override
@@ -54,6 +56,9 @@ public class PdfReaderActivity extends AppCompatActivity {
 
         storageReference.getDownloadUrl().addOnSuccessListener(uri -> {
             pdfWebView.loadUrl("https://drive.google.com/viewerng/viewer?embedded=true&url=" + uri.toString());
+        }).addOnFailureListener(e -> {
+            // Handle the error, e.g., log or display a message
+            e.printStackTrace();
         });
     }
 }
