@@ -18,8 +18,8 @@ Login Credentails for Student Access: <br>
      Password:  nishanth<br>
  3. UserName:  anirudh.gunde1@gmail.com<br>
      Password:  123456<br>
- 4. UserName:  <br>
-     Password:  <br>
+ 4. UserName:   Joyce Meyer, Lingam<br>
+     Password:  123456  <br>
      
 Login Credentials for Admin Access: <br>
 
@@ -75,4 +75,19 @@ Added required  permissions to access the Internet and Storage, Firebase storage
 <b>Purpose: <b>having a personalized logins for students and professors separately will be flexible to use the app with ease <br>
 
 <b>Data:<b> Course documents and videos, User login details <br>
+
+
+<b>Joyce MeyerLingam:<b> <br>
+<b>Colors: <b><br>
+<b>admin layout: <b><br>
+<b>Student Login: <b><br>
+
+<b>Colors.xml: added colors.xml for some addon css colors for application.Added custom colors to enhance the application's visual appeal and maintain a consistent theme.
+These colors can be referenced and applied throughout the app's layout and styling.<br>
+
+<b>Admin Layouts: added background images for each layout and some styling for admin layouts.
+Enhances the visual appeal of the admin interface, providing a more engaging and personalized experienceEnsured that styling choices are responsive across various screen sizes and orientations, optimizing the user experience on different devices.<br>
+
+<b>Student Login: added background images for each layout and some styling for student login.Incorporated background images designed specifically for the student login screens. Created an immersive and welcoming atmosphere, making the login experience visually appealing.<br>
+
 
