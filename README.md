@@ -29,9 +29,9 @@ Login Credentials for Admin Access: <br>
 Firebase database link which is used as storage for our application: <br>
 https://console.firebase.google.com/u/0/project/bearcatlearning/overview  <br>
 
-APK file Link: <br>
+APK file Link: <br> [apkdebug.apk](BearCat_Learning\BearCatLearning\app\build\outputs\apk\debug)
 
-Supported devices: <br>
+Supported devices: <br> All the android devices with latest versions
 
 <b>Sequence Information:</b> <br>
 This application has two types of logins( Admin, Student). <br>
@@ -66,35 +66,41 @@ After user(admin) click on any subject this layout will appeared. It has two but
 Created the required java files(AdminDashboardActivity,ContentModificationActivity,UploadFileActivity,UploadVideoActivity) and layouts(admin_dashboard,content_modification). <br>
 Added required  permissions to access the Internet and Storage, Firebase storage dependecies, google-services.json file to the app.
 
-<b>Anirudh Gunde:<b> <br>
-<b>Login Page: <b><br>
-<b>Firebase Connection: <b><br>
-<b>Video Player Layout: <b><br>
+<b>Anirudh Gunde:</b><br>
+<b>Login Page:</b><br>
+<b>Firebase Connection:</b><br>
+<b>Video Player Layout:</b><br>
 
-<b>Login Page Layout(activity_main.xml):<b> Created login page with logo of the app and background image with input fields UserId and Password with login button. Writtem logic for retrieving credentials from firebase authentication for students and added admin logins in the java file exclusivily for professors. <br>
+<b>Login Page Layout (activity_main.xml):</b><br>
+Created login page with the logo of the app and a background image with input fields UserId and Password, along with a login button. Implemented logic for retrieving credentials from Firebase authentication for students and added admin logins exclusively for professors in the Java file.<br>
 
-<b>Firebase Connection: <b> Integrated the entire application with Firebase for using the authentication with users having email and passwords as their credentials, Firebase storage for storing all the documents and videos where admin can upload. Added all the team members into the firebase project and accessed them as the owner of the app with all the permissions.  <br>
+<b>Firebase Connection:</b><br>
+Integrated the entire application with Firebase for using authentication with users having email and passwords as their credentials. Utilized Firebase storage for storing all the documents and videos, where admin can upload. Added all the team members into the Firebase project and granted them ownership of the app with all the necessary permissions.<br>
 
-<b>Video Player layout : <b>Added videoview for component for playing a video fetched from firebase uploaded by the admin. <br>
-<b>Pdf Layout: Added some logic in retrieving document from firebase.<b>
+<b>Video Player Layout:</b><br>
+Added a VideoView component for playing a video fetched from Firebase, uploaded by the admin.<br>
+<b>Pdf Layout:</b><br>
+Added some logic for retrieving documents from Firebase.<br>
 
-<b>Purpose: <b>having a personalized logins for students and professors separately will be flexible to use the app with ease <br>
+<b>Purpose:</b><br>
+Having personalized logins for students and professors separately will make the app more flexible and user-friendly.<br>
 
-<b>Data:<b> Course documents and videos, User login details <br>
+<b>Data:</b><br>
+Course documents and videos, User login details<br>
 
+<b>Joyce MeyerLingam:</b><br>
+<b>Colors:</b><br>
+<b>Admin Layout:</b><br>
+<b>Student Login:</b><br>
 
-<b>Joyce MeyerLingam:<b> <br>
-<b>Colors: <b><br>
-<b>admin layout: <b><br>
-<b>Student Login: <b><br>
+<b>Colors.xml:</b><br>
+Added colors.xml for additional CSS colors for the application. Included custom colors to enhance the application's visual appeal and maintain a consistent theme. These colors can be referenced and applied throughout the app's layout and styling.<br>
 
-<b>Colors.xml: added colors.xml for some addon css colors for application.Added custom colors to enhance the application's visual appeal and maintain a consistent theme.
-These colors can be referenced and applied throughout the app's layout and styling.<br>
+<b>Admin Layouts:</b><br>
+Added background images for each layout and applied styling for admin layouts. Enhanced the visual appeal of the admin interface, providing a more engaging and personalized experience. Ensured that styling choices are responsive across various screen sizes and orientations, optimizing the user experience on different devices.<br>
 
-<b>Admin Layouts: added background images for each layout and some styling for admin layouts.
-Enhances the visual appeal of the admin interface, providing a more engaging and personalized experienceEnsured that styling choices are responsive across various screen sizes and orientations, optimizing the user experience on different devices.<br>
-
-<b>Student Login: added background images for each layout and some styling for student login.Incorporated background images designed specifically for the student login screens. Created an immersive and welcoming atmosphere, making the login experience visually appealing.<br>
-<b>Pdfreader layout: added layout for reading any document<b>
-
+<b>Student Login:</b><br>
+Added background images for each layout and applied styling for student login. Incorporated background images designed specifically for the student login screens, creating an immersive and welcoming atmosphere. This makes the login experience visually appealing.<br>
+<b>Pdfreader Layout:</b><br>
+Added a layout for reading any document.<br>
 
