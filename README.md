@@ -61,3 +61,18 @@ After user(admin) click on any subject this layout will appeared. It has two but
 Created the required java files(AdminDashboardActivity,ContentModificationActivity,UploadFileActivity,UploadVideoActivity) and layouts(admin_dashboard,content_modification). <br>
 Added required  permissions to access the Internet and Storage, Firebase storage dependecies, google-services.json file to the app.
 
+**Anirudh Gunde:** <br>
+<b>Login Page: <b><br>
+<b>Firebase Connection: <b><br>
+<b>Video Player Layout: <b><br>
+
+<b>Login Page Layout(activity_main.xml):<b> Created login page with logo of the app and background image with input fields UserId and Password with login button. Writtem logic for retrieving credentials from firebase authentication for students and added admin logins in the java file exclusivily for professors. <br>
+
+<b>Firebase Connection: <b>Integrated the entire application with Firebase for using the authentication with users having email and passwords as their credentials, Firebase storage for storing all the documents and videos where admin can upload. Added all the team members into the firebase project and accessed them as the owner of the app with all the permissions.  <br>
+
+<b>Video Player layout : <b>Added videoview for component for playing a video fetched from firebase uploaded by the admin. <br>
+
+<b>Purpose: <b>having a personalized logins for students and professors separately will be flexible to use the app with ease <br>
+
+<b>Data:<b> Course documents and videos, User login details <br>
+
