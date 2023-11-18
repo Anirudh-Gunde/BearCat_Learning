@@ -17,6 +17,7 @@ public class AdminDashboardActivity extends  AppCompatActivity{
     private ImageButton webDevImgButn;
     private TextView usernameTV;
     private Button logoutButton;
+    private ImageButton adbimgButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,6 +29,7 @@ public class AdminDashboardActivity extends  AppCompatActivity{
         webDevImgButn = findViewById(R.id.imageButton3);
         usernameTV = findViewById(R.id.usernameTV);
         logoutButton = findViewById(R.id.LogoutButton);
+        adbimgButton = findViewById(R.id.imageButton4);
 
 
         String studentID = getIntent().getStringExtra("Admin");
@@ -52,6 +54,12 @@ public class AdminDashboardActivity extends  AppCompatActivity{
             @Override
             public void onClick(View view) {
                 startSubjectDetailActivity("Web Development");
+            }
+        });
+        adbimgButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startSubjectDetailActivity("Advance Database Systems");
             }
         });
         logoutButton.setOnClickListener(new View.OnClickListener() {
