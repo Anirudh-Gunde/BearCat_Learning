@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
+    android:layout_height="match_parent"
+    android:background="@drawable/img_7">
         <TextView
             android:id="@+id/welcomeTextView"
             android:layout_width="458dp"
@@ -18,7 +18,6 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="HardcodedText,MissingConstraints"
             tools:layout_editor_absoluteX="26dp" />
-
         <TextView
             android:id="@+id/instructionTextView"
             android:layout_width="wrap_content"
@@ -31,7 +30,6 @@
             app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"
             tools:ignore="HardcodedText,MissingConstraints,SpUsage,TextSizeCheck"
             tools:layout_editor_absoluteX="52dp" />
-
         <ImageButton
             android:id="@+id/imgbutton1"
             android:layout_width="124dp"
@@ -44,7 +42,6 @@
             app:layout_constraintTop_toBottomOf="@+id/instructionTextView"
             tools:ignore="HardcodedText,MissingConstraints"
             tools:layout_editor_absoluteX="28dp" />
-
         <ImageButton
             android:id="@+id/imageButton2"
             android:layout_width="135dp"
@@ -57,7 +54,6 @@
             app:layout_constraintTop_toBottomOf="@+id/instructionTextView"
             app:srcCompat="@drawable/android"
             tools:ignore="HardcodedText,MissingConstraints,ImageContrastCheck" />
-
         <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="126dp"
@@ -80,8 +76,8 @@
             android:layout_marginTop="36dp"
             app:layout_constraintStart_toEndOf="@id/imageButton3"
             app:layout_constraintTop_toBottomOf="@id/imageButton2"
-            app:srcCompat="@drawable/adb" />
-
+            app:srcCompat="@drawable/adb"
+            tools:ignore="SpeakableTextPresentCheck" />
         <TextView
             android:id="@+id/usernameTV"
             android:layout_width="101dp"
@@ -93,7 +89,6 @@
             app:layout_constraintHorizontal_bias="0.987"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
         <Button
             android:id="@+id/LogoutButton"
             android:layout_width="wrap_content"
@@ -101,7 +96,7 @@
             android:layout_marginStart="28dp"
             android:layout_marginBottom="116dp"
             android:text="Logout"
+            android:backgroundTint="@android:color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
