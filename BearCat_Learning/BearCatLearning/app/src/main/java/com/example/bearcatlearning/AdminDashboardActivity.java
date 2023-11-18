@@ -16,7 +16,7 @@ public class AdminDashboardActivity extends  AppCompatActivity{
     private ImageButton androidImgButn;
     private ImageButton webDevImgButn;
     private TextView usernameTV;
-
+    private Button logoutButton;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,6 +27,7 @@ public class AdminDashboardActivity extends  AppCompatActivity{
         androidImgButn = findViewById(R.id.imageButton2);
         webDevImgButn = findViewById(R.id.imageButton3);
         usernameTV = findViewById(R.id.usernameTV);
+        logoutButton = findViewById(R.id.LogoutButton);
 
 
         String studentID = getIntent().getStringExtra("Admin");
@@ -51,6 +52,20 @@ public class AdminDashboardActivity extends  AppCompatActivity{
             @Override
             public void onClick(View view) {
                 startSubjectDetailActivity("Web Development");
+            }
+        });
+        logoutButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Sign out the user from Firebase Authentication
+                FirebaseAuth.getInstance().signOut();
+
+                // Navigate back to the login screen (MainActivity)
+                Intent intent = new Intent(AdminDashboardActivity.this, MainActivity.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intent);
+                finish(); // Close the current activity to prevent the user from going back
+
             }
         });
 
