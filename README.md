@@ -33,8 +33,13 @@ APK file Link: <br>
 
 Supported devices: <br>
 
-Sequence Information: <br>
-
+<b>Sequence Information:</b> <br>
+This application has two types of logins( Admin, Student). <br>
+<b>Admin Flow:</b> <br>
+After logged in admin can able to see the list of courses, can choose the course for the content modification like uploading files/videos of partiular subject which are stored in the firebase database. <br>
+<b>Student Flow:</b>  <br>
+After logged in student can able to see the list of courses, can choose the course for the conent view contents like files/videos. <br>
+This application wil helps the students to access the course materials whenever they wanted to even if they finished the course. <br>
 
 <b>Contribution of individual team members:</b><br>
 
