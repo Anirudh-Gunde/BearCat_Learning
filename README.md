@@ -15,8 +15,8 @@ The Application has two kinds of logins. <br>
 Login Credentails for Student Access: <br>
  1. UserName: manasaakula970@gmail.com  <br>
      Password: manasa    <br>
- 2. UserName:  <br>
-     Password:  <br>
+ 2. UserName:  nishanthraju2001@gmail.com<br>
+     Password:  nishanth<br>
  3. UserName:  <br>
      Password:  <br>
  4. UserName:  <br>
