@@ -56,14 +56,14 @@ public class JavaCourseActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        classesNotesBTN.setOnClickListener(new View.OnClickListener() {
+        classesVideoBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,contentActivity.class);
                 startActivity(intent);
             }
         });
-        classesVideoBTN.setOnClickListener(new View.OnClickListener() {
+        classesNotesBTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(JavaCourseActivity.this,PdfReaderActivity.class);
