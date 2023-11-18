@@ -24,6 +24,7 @@ Login Credentails for Student Access: <br>
 
 
 Login Credentials for Admin Access: <br>
+
   UserName: Professor <br>
   Password: 123456  <br>
 
@@ -31,3 +32,19 @@ Firebase database link which is used as storage for our application: <br>
 https://console.firebase.google.com/u/0/project/bearcatlearning/overview  <br>
 
 APK file Link: 
+
+Contributions: <br>
+
+Nishanth Raju : <br>
+Dashboard (Student View): <br>
+
+Dashboard.xml <br>
+
+Student dashboard Layout: Created the student dashboard layout where after student has been logged in this layout will be appeared and it <br> has the one text view and six image buttons each image button represents one singe course. After user clicking on the course it will be directed to next layout. <br>
+Course List Layout : Created course list layout for the specific course and added the text views and view file button and view video button.<br>
+Created java files for the layouts and added the fuctionality for the files.<br>
+Added the animation for the app when the app is opened.<br>
+
+Purpose: Display a personalized dashboard for students where they can see a list of their enrolled courses and access course materials. <br>
+
+Data: Student profile, enrolled courses. <br>
