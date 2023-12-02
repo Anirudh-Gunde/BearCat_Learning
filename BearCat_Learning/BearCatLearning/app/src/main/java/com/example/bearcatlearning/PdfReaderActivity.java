@@ -25,7 +25,7 @@ public class PdfReaderActivity extends AppCompatActivity {
 
         pdfWebView = findViewById(R.id.pdfWebView);
         firebaseStorage = FirebaseStorage.getInstance();
-        storageReference = firebaseStorage.getReference().child("Constructors.pptx"); // Replace with your PDF file name
+        storageReference = firebaseStorage.getReference().child("JavaIntro-notes.pdf"); // Replace with your PDF file name
 
         displayPdf();
     }

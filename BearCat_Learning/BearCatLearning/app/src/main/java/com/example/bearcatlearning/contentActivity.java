@@ -39,7 +39,7 @@ public class contentActivity extends AppCompatActivity {
         i = findViewById(R.id.logout);
 
         firebaseStorage = FirebaseStorage.getInstance();
-        storageReference = firebaseStorage.getReference().child("Parkway.mp4"); // Replace with your video file name
+        storageReference = firebaseStorage.getReference().child("Java_Introduction.mp4"); // Replace with your video file name
 
         initializeMediaPlayer();
 
